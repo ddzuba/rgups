@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_69dJUEUoEeO7zeo2JbNwkA" elementId="org.eclipse.e4.ide.application" bindingContexts="_69dwYEUoEeO7zeo2JbNwkA">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_69dJUUUoEeO7zeo2JbNwkA" label="ru.rgups.geolab" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_69dwd0UoEeO7zeo2JbNwkA">
+      <children xsi:type="advanced:Perspective" xmi:id="_69dweEUoEeO7zeo2JbNwkA">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_69eXcEUoEeO7zeo2JbNwkA">
+          <children xsi:type="basic:PartStack" xmi:id="_69eXcUUoEeO7zeo2JbNwkA">
+            <children xsi:type="basic:Part" xmi:id="_69eXckUoEeO7zeo2JbNwkA" contributionURI="bundleclass://ru.rgups.geolab/ru.rgups.geolab.parts.SamplePart" label="Sample Part"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_69dwcEUoEeO7zeo2JbNwkA" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_69dwcUUoEeO7zeo2JbNwkA" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_69dwckUoEeO7zeo2JbNwkA" label="Open" iconURI="platform:/plugin/ru.rgups.geolab/icons/sample.gif" command="_69dwZ0UoEeO7zeo2JbNwkA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_69dwc0UoEeO7zeo2JbNwkA" label="Save" iconURI="platform:/plugin/ru.rgups.geolab/icons/save_edit.gif" command="_69dwakUoEeO7zeo2JbNwkA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_69dwdEUoEeO7zeo2JbNwkA" label="Quit" command="_69dwY0UoEeO7zeo2JbNwkA"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_69dwdUUoEeO7zeo2JbNwkA" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_69dwdkUoEeO7zeo2JbNwkA" label="About" command="_69dwbUUoEeO7zeo2JbNwkA"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_69eXc0UoEeO7zeo2JbNwkA">
+      <children xsi:type="menu:ToolBar" xmi:id="_69eXdEUoEeO7zeo2JbNwkA" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_69eXdUUoEeO7zeo2JbNwkA" iconURI="platform:/plugin/ru.rgups.geolab/icons/sample.gif" command="_69dwZ0UoEeO7zeo2JbNwkA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_69eXdkUoEeO7zeo2JbNwkA" iconURI="platform:/plugin/ru.rgups.geolab/icons/save_edit.gif" command="_69dwakUoEeO7zeo2JbNwkA"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_69dwZEUoEeO7zeo2JbNwkA" elementId="ru.rgups.geolab.handler.quitCommand" contributionURI="bundleclass://ru.rgups.geolab/ru.rgups.geolab.handlers.QuitHandler" command="_69dwY0UoEeO7zeo2JbNwkA"/>
+  <handlers xmi:id="_69dwaEUoEeO7zeo2JbNwkA" elementId="ru.rgups.geolab.handler.openCommand" contributionURI="bundleclass://ru.rgups.geolab/ru.rgups.geolab.handlers.OpenHandler" command="_69dwZ0UoEeO7zeo2JbNwkA"/>
+  <handlers xmi:id="_69dwa0UoEeO7zeo2JbNwkA" elementId="ru.rgups.geolab.handler.saveCommand" contributionURI="bundleclass://ru.rgups.geolab/ru.rgups.geolab.handlers.SaveHandler" command="_69dwakUoEeO7zeo2JbNwkA"/>
+  <handlers xmi:id="_69dwbkUoEeO7zeo2JbNwkA" elementId="ru.rgups.geolab.handler.aboutCommand" contributionURI="bundleclass://ru.rgups.geolab/ru.rgups.geolab.handlers.AboutHandler" command="_69dwbUUoEeO7zeo2JbNwkA"/>
+  <bindingTables xmi:id="_69dwZUUoEeO7zeo2JbNwkA" bindingContext="_69dwYEUoEeO7zeo2JbNwkA">
+    <bindings xmi:id="_69dwZkUoEeO7zeo2JbNwkA" keySequence="M1+Q" command="_69dwY0UoEeO7zeo2JbNwkA"/>
+    <bindings xmi:id="_69dwaUUoEeO7zeo2JbNwkA" keySequence="M1+O" command="_69dwZ0UoEeO7zeo2JbNwkA"/>
+    <bindings xmi:id="_69dwbEUoEeO7zeo2JbNwkA" keySequence="M1+S" command="_69dwakUoEeO7zeo2JbNwkA"/>
+    <bindings xmi:id="_69dwb0UoEeO7zeo2JbNwkA" keySequence="M1+A" command="_69dwbUUoEeO7zeo2JbNwkA"/>
+  </bindingTables>
+  <rootContext xmi:id="_69dwYEUoEeO7zeo2JbNwkA" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_69dwYUUoEeO7zeo2JbNwkA" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_69dwYkUoEeO7zeo2JbNwkA" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_69dwY0UoEeO7zeo2JbNwkA" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_69dwZ0UoEeO7zeo2JbNwkA" elementId="ru.rgups.geolab.open" commandName="openCommand"/>
+  <commands xmi:id="_69dwakUoEeO7zeo2JbNwkA" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_69dwbUUoEeO7zeo2JbNwkA" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_69dJUkUoEeO7zeo2JbNwkA" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_69dJU0UoEeO7zeo2JbNwkA" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_69dJVEUoEeO7zeo2JbNwkA" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_69dJVUUoEeO7zeo2JbNwkA" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_69dJVkUoEeO7zeo2JbNwkA" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_69dJV0UoEeO7zeo2JbNwkA" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_69dJWEUoEeO7zeo2JbNwkA" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
